@@ -33,3 +33,5 @@ below it
 
 ssh -i ~/.ssh/id_rsa grader@52.25.181.161 -p 2200 (to login as grader)
 or ssh grader@52.25.181.161 -p 2200
+
+postgres pw: catalog
