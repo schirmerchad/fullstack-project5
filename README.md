@@ -1,18 +1,6 @@
 # Fullstack Project #5 / Linux Server Configuration
 
-ssh -v grader@52.11.176.33 -p2200 password: grader
-
-# Project Requirements 
-
-Your README.md file should include all of the following:
-
-i. The IP address and SSH port so your server can be accessed by the reviewer.
-
-ii. The complete URL to your hosted web application.
-
-iii. A summary of software you installed and configuration changes made.
-
-iv. A list of any third-party resources you made use of to complete this project.
+With this app I took a baseline installation of a Linux distribution on a virtual machine and prepared it to host a web application. This included installing updates, securing it from a number of attack vectors and installing/configuring web and database servers.
 
 # Connection Instructions
 * IP Address: 52.10.18.139
