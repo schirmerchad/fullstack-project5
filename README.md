@@ -1,6 +1,6 @@
 # Fullstack Project #5 / Linux Server Configuration
 
-Udacity Fullstack Nanodegree Project 5 ssh -v grader@52.11.176.33 -p2200 password: grader
+ssh -v grader@52.11.176.33 -p2200 password: grader
 
 # Project Requirements 
 
@@ -15,6 +15,9 @@ iii. A summary of software you installed and configuration changes made.
 iv. A list of any third-party resources you made use of to complete this project.
 
 # Connection Instructions
+* IP Address: 52.10.18.139
+* SSH Port: 2200
+* AWS URL: http://ec2-52-10-18-139.us-west-2.compute.amazonaws.com
 
 # Software Installed
 Apache software and packages
@@ -43,8 +46,6 @@ Flask, SQLalchemy, Oauth2
 # Configuration Changes Made
 
 # Third-Party Resources
-
-remeber to restart ssh after config changes!
 
 ssh -i ~/.ssh/id_rsa grader@52.10.18.139 -p 2200 (to login as grader)
 or ssh grader@52.10.18.139 -p 2200
