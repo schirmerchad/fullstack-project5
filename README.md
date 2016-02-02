@@ -17,6 +17,28 @@ iv. A list of any third-party resources you made use of to complete this project
 # Connection Instructions
 
 # Software Installed
+Apache software and packages
+* `apt-get install apache2`
+* `apt-get install python-setuptools libapache2-mod-wsgi`
+* `apt-get install libapache2-mod-wsgi python-dev`
+* `apt-get install a2enmod wsgi`
+
+Git
+* `apt-get install git`
+
+Python
+* `apt-get install python-pip`
+
+PostgreSQL
+* `apt-get install postgresql`
+
+Flask, SQLalchemy, Oauth2
+* `apt-get install python-psycopg2 python-flask`
+* `apt-get install python-sqlalchemy python-pip`
+* `pip install oauth2client`
+* `pip install requests`
+* `pip install httplib2`
+* `pip install flask-seasurf`
 
 # Configuration Changes Made
 
