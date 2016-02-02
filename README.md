@@ -1,37 +1,30 @@
-# fullstack-project5
+# Fullstack Project #5 / Linux Server Configuration
 
-Linux-Server-Configuration
 Udacity Fullstack Nanodegree Project 5 ssh -v grader@52.11.176.33 -p2200 password: grader
 
-Procedure
+# Project Requirements 
 
-(1) Set up Linux server as Instructed by Udacity
+Your README.md file should include all of the following:
 
-Udacity Account
+i. The IP address and SSH port so your server can be accessed by the reviewer.
 
-(2) Create a new user named grader
+ii. The complete URL to your hosted web application.
 
-Source
+iii. A summary of software you installed and configuration changes made.
 
-Create user grader
+iv. A list of any third-party resources you made use of to complete this project.
 
-$ adduser grader
-(3) Give the grader the permission to sudo
+# Connection Instructions
 
-Source
+# Software Installed
 
-Edit sudoers file to allow grader to sudo
+# Configuration Changes Made
 
-$ visudo
-Find the line
+# Third-Party Resources
 
-root ALL=(ALL:ALL) ALL
-and add
+remeber to restart ssh after config changes!
 
-grader ALL=(ALL:ALL) ALL
-below it
-
-ssh -i ~/.ssh/id_rsa grader@52.25.181.161 -p 2200 (to login as grader)
-or ssh grader@52.25.181.161 -p 2200
-
+ssh -i ~/.ssh/id_rsa grader@52.10.18.139 -p 2200 (to login as grader)
+or ssh grader@52.10.18.139 -p 2200
+grader pw: grader
 postgres pw: catalog
