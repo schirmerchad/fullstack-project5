@@ -32,6 +32,18 @@ Flask, SQLalchemy, Oauth2
 * `pip install flask-seasurf`
 
 # Configuration Changes Made
+1. Create a user `grader`
+  * `adduser grader`
+  * `visudo` and add grader to users with sudo capabilities
+2. Update all packages
+  * `apt-get update`
+  * `apt-get upgrade`
+3. Change SSH port
+4. Configure UFW
+5. Change local timezone to UTC
+6. Install and configure Apache2
+7. Install and configure PostgreSQL
+8. 
 
 # Third-Party Resources
 
