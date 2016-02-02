@@ -39,6 +39,7 @@ Flask, SQLalchemy, Oauth2
   * `apt-get update`
   * `apt-get upgrade`
 3. Change SSH port
+  * `okay`
 4. Configure UFW
 5. Change local timezone to UTC
 6. Install and configure Apache2
