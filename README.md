@@ -39,12 +39,47 @@ Flask, SQLalchemy, Oauth2
   * `apt-get update`
   * `apt-get upgrade`
 3. Change SSH port
-  * `okay`
+  * `nano /etc/ssh/sshd_config` and enable password authentication
+  * `ssh-keygen` on local machine to generate new ssh key for grader
+  * `scp ~/.ssh/id_rsa.pub grader@52.10.18.139:` to securely copy the ssh key to the linux server
+  * `su - grader` to substitute user to grader
+  * `mkdir ~/.ssh` to make .ssh directory
+  * `chmod 700 ~/.ssh` to allow owner to read, write, and execute
+  * `cat ~/id_rsa.pub >> ~/.ssh/authorized_keys`
+  * `rm ~/id_rsa.pub`
+  * `chmod 600 ~/.ssh/authorized_keys` to allow owner to read and write
 4. Configure UFW
+  * `ufw default deny incoming`
+  * `ufw default allow outgoing`
+  * `ufw allow 2200/tcp`
+  * `ufw allow 80/tcp`
+  * `ufw allow 123/udp`
+  * `ufw enable`
 5. Change local timezone to UTC
+  * `dpkg-reconfigure tzdata`
 6. Install and configure Apache2
+  * Properly install Apache2 and dependency packages
+  * `nano /etc/apache2/sites-available/app.conf` and add a virtual host declaration for the Python app
+  * `a2ensite app` to enable the specified site within the apache configuration
+  * `nano /var/www/app/app.wsgi` and add a WSGI file to use the Apache module to host the Python app
 7. Install and configure PostgreSQL
-8. 
+  * Properly install PostgreSQL
+  * `cd /etc/postgresql/9.3/main/`
+  * `su - postgres`
+  * `psql`
+  * `CREATE USER catalog WITH PASSWORD 'password';`
+  * `ALTER USER catalog CREATEDB;`
+  * `CREATE DATABASE catalog WITH OWNER catalog;`
+  * `REVOKE ALL ON SCHEMA public FROM public;`
+  * `GRANT ALL ON SCHEMA public TO catalog;`
+8. Clone and setup Catalog app project
+  * `git clone https://github.com/schirmerchad/mealCost.git`
+  * `rm README.md`
+  * `mv project.py __init__.py`
+  * `mv * ..`
+  * `rm -rf FSND-P5`
+  * The database_setup.py, mealdatabase.py, and __init__.py files require a refactoring to use PostgreSQL instead of SQLite3 and reference the new file path for client_secrets.json
+  * Update the authorized JavaScript Origins in the Google Developers Console to reflect the URLs for the app
 
 # Third-Party Resources
 
