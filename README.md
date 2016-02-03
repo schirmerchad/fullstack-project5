@@ -82,6 +82,16 @@ Flask, SQLalchemy, Oauth2
   * Update the authorized JavaScript Origins in the Google Developers Console to reflect the URLs for the app
 
 # Third-Party Resources
+  * http://blog.udacity.com/2015/03/step-by-step-guide-install-lamp-linux-apache-mysql-python-ubuntu.html
+  * https://www.digitalocean.com/community/tutorials/how-to-configure-the-apache-web-server-on-an-ubuntu-or-debian-vps
+  * https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-an-ubuntu-14-04-vps
+  * http://askubuntu.com/questions/16650/create-a-new-ssh-user-on-ubuntu-server
+  * http://flask.pocoo.org/docs/0.10/deploying/mod_wsgi/
+  * https://www.digitalocean.com/community/tutorials/additional-recommended-steps-for-new-ubuntu-14-04-servers
+  * https://wiki.archlinux.org/index.php/SSH_keys
+  * https://www.digitalocean.com/community/tutorials/how-to-setup-a-firewall-with-ufw-on-an-ubuntu-and-debian-cloud-server
+  * http://httpd.apache.org/docs/2.2/en/mod/core.html#virtualhost
+  * https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
 
 ssh -i ~/.ssh/id_rsa grader@52.10.18.139 -p 2200 (to login as grader)
 or ssh grader@52.10.18.139 -p 2200
