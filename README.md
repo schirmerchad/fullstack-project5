@@ -92,8 +92,3 @@ Flask, SQLalchemy, Oauth2
   * https://www.digitalocean.com/community/tutorials/how-to-setup-a-firewall-with-ufw-on-an-ubuntu-and-debian-cloud-server
   * http://httpd.apache.org/docs/2.2/en/mod/core.html#virtualhost
   * https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
-
-ssh -i ~/.ssh/id_rsa grader@52.10.18.139 -p 2200 (to login as grader)
-or ssh grader@52.10.18.139 -p 2200
-grader pw: grader
-postgres pw: catalog
